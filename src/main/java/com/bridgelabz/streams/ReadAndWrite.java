@@ -10,7 +10,7 @@ public class ReadAndWrite {
         FileOutputStream fo=new FileOutputStream("output")){
             int data;
             while((data=fi.read())!=-1){
-                fo.write(data);
+                fo.write(Character.toLowerCase(data));
             }
             System.out.println("data copied");
         }
